@@ -1,0 +1,61 @@
+$bezier: cubic-bezier(0.2, 0.96, 0.6, 0.99);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+
+.center {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.center div {
+  background: white;
+}
+
+@mixin dot-styling($size, $index, $top, $left) {
+  position: absolute;
+  z-index: 4 - $index;
+  width: $size;
+  height: $size;
+  top: $top;
+  left: $left;
+  background: #fff;
+  border-radius: 50%;
+  animation-fill-mode: both;
+}
+
+@for $i from 1 through 4 {
+  $dot-size: $i * 30px;
+  $dot-top: 95px - $i * 15px;
+  $dot-left: 95px - $i * 15px;
+
+  .dot-#{$i} {
+    @include dot-styling($dot-size, $i, $dot-top, $dot-left);
+    animation: appearing-#{$i} 2s $bezier infinite alternate;
+  }
+
+  @keyframes appearing-#{$i} {
+    0%,
+    #{60% - ($i - 1) * 10%} {
+      box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+      transform: scale(0);
+    }
+
+    100% {
+      box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+      transform: scale(1);
+    }
+  }
+}
