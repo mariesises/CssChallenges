@@ -140,9 +140,12 @@
   cursor: pointer;
   background: none;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
-  text-align: center;
   width: 120px;
   line-height: 12px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  
 
   &:last-child{
     margin-top: 16px;
