@@ -24,7 +24,7 @@
   position: relative;
   width: 90px;
   height: 90px;
-  background: white;
+  background-image: linear-gradient( 135deg, #EECE13 10%, #B210FF 100%);
   border-radius: 50%;
   filter: blur(10px);
 }
@@ -44,10 +44,10 @@
       content: "";
       width: 50px;
       height: 50px;
-      background: white;
+      background-image: linear-gradient( 135deg, #FDD819 10%, #E80505 100%);
       border-radius: 50%;
       transform-origin: (40 - $i * 3) + px (40 - $i * 3) + px;
-      animation: rotate 2.5s ease-in-out calc($i / 5) s infinite;
+      animation: rotate (2.5 + calc($i / 5)) + s ease-in-out calc($i / 4) + s infinite;
       filter: blur(5px);
     }
   }
@@ -66,11 +66,11 @@
       position: absolute;
       display: block;
       content: "";
-      width: (7 + $i) + px;
-      height: (7 + $i) + px;
-      background: #fff;
+      width: (5 + $i) + px;
+      height: (5 + $i) + px;
+      background-image: linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
       border-radius: 50%;
-      transform-origin: (60 - $i * 2) + px (60 - $i * 2) + px;
+      transform-origin: (80 - $i * 2) + px (80 - $i * 2) + px;
       animation: rotate (3.5 + calc($i / 5)) + s ease-in-out calc($i / 5) + s infinite;
       filter: blur(3px);
     }
@@ -82,6 +82,6 @@
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
   to {
-    transform: rotate(360deg) translate3d(0, 0, 0);
+    transform: rotate(-360deg) translate3d(0, 0, 0);
   }
 }

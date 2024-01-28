@@ -24,7 +24,7 @@
   position: relative;
   width: 90px;
   height: 90px;
-  background: white;
+  background-image: linear-gradient(135deg, #EECE13 10%, #B210FF 100%);
   border-radius: 50%;
   filter: blur(10px);
 }
@@ -35,7 +35,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(100deg);
+  transform: rotate(235deg);
 }
 .bubble-1:after {
   position: absolute;
@@ -43,10 +43,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 37px 37px;
-  animation: rotate 2.5s ease-in-out 0.2 s infinite;
+  animation: rotate 2.7s ease-in-out 0.25s infinite;
   filter: blur(5px);
 }
 
@@ -56,7 +56,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(125deg);
+  transform: rotate(152deg);
 }
 .bubble-2:after {
   position: absolute;
@@ -64,10 +64,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 34px 34px;
-  animation: rotate 2.5s ease-in-out 0.4 s infinite;
+  animation: rotate 2.9s ease-in-out 0.5s infinite;
   filter: blur(5px);
 }
 
@@ -77,7 +77,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(145deg);
+  transform: rotate(113deg);
 }
 .bubble-3:after {
   position: absolute;
@@ -85,10 +85,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 31px 31px;
-  animation: rotate 2.5s ease-in-out 0.6 s infinite;
+  animation: rotate 3.1s ease-in-out 0.75s infinite;
   filter: blur(5px);
 }
 
@@ -98,7 +98,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(271deg);
+  transform: rotate(277deg);
 }
 .bubble-4:after {
   position: absolute;
@@ -106,10 +106,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 28px 28px;
-  animation: rotate 2.5s ease-in-out 0.8 s infinite;
+  animation: rotate 3.3s ease-in-out 1s infinite;
   filter: blur(5px);
 }
 
@@ -119,7 +119,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(56deg);
+  transform: rotate(296deg);
 }
 .bubble-5:after {
   position: absolute;
@@ -127,10 +127,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 25px 25px;
-  animation: rotate 2.5s ease-in-out 1 s infinite;
+  animation: rotate 3.5s ease-in-out 1.25s infinite;
   filter: blur(5px);
 }
 
@@ -140,7 +140,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(36deg);
+  transform: rotate(73deg);
 }
 .bubble-6:after {
   position: absolute;
@@ -148,10 +148,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 22px 22px;
-  animation: rotate 2.5s ease-in-out 1.2 s infinite;
+  animation: rotate 3.7s ease-in-out 1.5s infinite;
   filter: blur(5px);
 }
 
@@ -161,7 +161,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(90deg);
+  transform: rotate(242deg);
 }
 .bubble-7:after {
   position: absolute;
@@ -169,10 +169,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 19px 19px;
-  animation: rotate 2.5s ease-in-out 1.4 s infinite;
+  animation: rotate 3.9s ease-in-out 1.75s infinite;
   filter: blur(5px);
 }
 
@@ -182,7 +182,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(12deg);
+  transform: rotate(151deg);
 }
 .bubble-8:after {
   position: absolute;
@@ -190,10 +190,10 @@
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-image: linear-gradient(135deg, #FDD819 10%, #E80505 100%);
   border-radius: 50%;
   transform-origin: 16px 16px;
-  animation: rotate 2.5s ease-in-out 1.6 s infinite;
+  animation: rotate 4.1s ease-in-out 2s infinite;
   filter: blur(5px);
 }
 
@@ -203,17 +203,17 @@
   left: 38px;
   width: 8px;
   height: 8px;
-  transform: rotate(192deg);
+  transform: rotate(11deg);
 }
 .sparkle-1:after {
   position: absolute;
   display: block;
   content: "";
-  width: 8px;
-  height: 8px;
-  background: #fff;
+  width: 6px;
+  height: 6px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 58px 58px;
+  transform-origin: 78px 78px;
   animation: rotate 3.7s ease-in-out 0.2s infinite;
   filter: blur(3px);
 }
@@ -224,17 +224,17 @@
   left: 38px;
   width: 9px;
   height: 9px;
-  transform: rotate(21deg);
+  transform: rotate(113deg);
 }
 .sparkle-2:after {
   position: absolute;
   display: block;
   content: "";
-  width: 9px;
-  height: 9px;
-  background: #fff;
+  width: 7px;
+  height: 7px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 56px 56px;
+  transform-origin: 76px 76px;
   animation: rotate 3.9s ease-in-out 0.4s infinite;
   filter: blur(3px);
 }
@@ -245,17 +245,17 @@
   left: 38px;
   width: 10px;
   height: 10px;
-  transform: rotate(128deg);
+  transform: rotate(153deg);
 }
 .sparkle-3:after {
   position: absolute;
   display: block;
   content: "";
-  width: 10px;
-  height: 10px;
-  background: #fff;
+  width: 8px;
+  height: 8px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 54px 54px;
+  transform-origin: 74px 74px;
   animation: rotate 4.1s ease-in-out 0.6s infinite;
   filter: blur(3px);
 }
@@ -266,17 +266,17 @@
   left: 38px;
   width: 11px;
   height: 11px;
-  transform: rotate(116deg);
+  transform: rotate(40deg);
 }
 .sparkle-4:after {
   position: absolute;
   display: block;
   content: "";
-  width: 11px;
-  height: 11px;
-  background: #fff;
+  width: 9px;
+  height: 9px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 52px 52px;
+  transform-origin: 72px 72px;
   animation: rotate 4.3s ease-in-out 0.8s infinite;
   filter: blur(3px);
 }
@@ -287,17 +287,17 @@
   left: 38px;
   width: 12px;
   height: 12px;
-  transform: rotate(67deg);
+  transform: rotate(44deg);
 }
 .sparkle-5:after {
   position: absolute;
   display: block;
   content: "";
-  width: 12px;
-  height: 12px;
-  background: #fff;
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 50px 50px;
+  transform-origin: 70px 70px;
   animation: rotate 4.5s ease-in-out 1s infinite;
   filter: blur(3px);
 }
@@ -308,17 +308,17 @@
   left: 38px;
   width: 13px;
   height: 13px;
-  transform: rotate(25deg);
+  transform: rotate(158deg);
 }
 .sparkle-6:after {
   position: absolute;
   display: block;
   content: "";
-  width: 13px;
-  height: 13px;
-  background: #fff;
+  width: 11px;
+  height: 11px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 48px 48px;
+  transform-origin: 68px 68px;
   animation: rotate 4.7s ease-in-out 1.2s infinite;
   filter: blur(3px);
 }
@@ -329,17 +329,17 @@
   left: 38px;
   width: 14px;
   height: 14px;
-  transform: rotate(269deg);
+  transform: rotate(256deg);
 }
 .sparkle-7:after {
   position: absolute;
   display: block;
   content: "";
-  width: 14px;
-  height: 14px;
-  background: #fff;
+  width: 12px;
+  height: 12px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 46px 46px;
+  transform-origin: 66px 66px;
   animation: rotate 4.9s ease-in-out 1.4s infinite;
   filter: blur(3px);
 }
@@ -350,17 +350,17 @@
   left: 38px;
   width: 15px;
   height: 15px;
-  transform: rotate(181deg);
+  transform: rotate(192deg);
 }
 .sparkle-8:after {
   position: absolute;
   display: block;
   content: "";
-  width: 15px;
-  height: 15px;
-  background: #fff;
+  width: 13px;
+  height: 13px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 44px 44px;
+  transform-origin: 64px 64px;
   animation: rotate 5.1s ease-in-out 1.6s infinite;
   filter: blur(3px);
 }
@@ -371,17 +371,17 @@
   left: 38px;
   width: 16px;
   height: 16px;
-  transform: rotate(249deg);
+  transform: rotate(150deg);
 }
 .sparkle-9:after {
   position: absolute;
   display: block;
   content: "";
-  width: 16px;
-  height: 16px;
-  background: #fff;
+  width: 14px;
+  height: 14px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 42px 42px;
+  transform-origin: 62px 62px;
   animation: rotate 5.3s ease-in-out 1.8s infinite;
   filter: blur(3px);
 }
@@ -392,17 +392,17 @@
   left: 38px;
   width: 17px;
   height: 17px;
-  transform: rotate(272deg);
+  transform: rotate(121deg);
 }
 .sparkle-10:after {
   position: absolute;
   display: block;
   content: "";
-  width: 17px;
-  height: 17px;
-  background: #fff;
+  width: 15px;
+  height: 15px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 40px 40px;
+  transform-origin: 60px 60px;
   animation: rotate 5.5s ease-in-out 2s infinite;
   filter: blur(3px);
 }
@@ -413,17 +413,17 @@
   left: 38px;
   width: 18px;
   height: 18px;
-  transform: rotate(220deg);
+  transform: rotate(161deg);
 }
 .sparkle-11:after {
   position: absolute;
   display: block;
   content: "";
-  width: 18px;
-  height: 18px;
-  background: #fff;
+  width: 16px;
+  height: 16px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 38px 38px;
+  transform-origin: 58px 58px;
   animation: rotate 5.7s ease-in-out 2.2s infinite;
   filter: blur(3px);
 }
@@ -434,17 +434,17 @@
   left: 38px;
   width: 19px;
   height: 19px;
-  transform: rotate(267deg);
+  transform: rotate(182deg);
 }
 .sparkle-12:after {
   position: absolute;
   display: block;
   content: "";
-  width: 19px;
-  height: 19px;
-  background: #fff;
+  width: 17px;
+  height: 17px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 36px 36px;
+  transform-origin: 56px 56px;
   animation: rotate 5.9s ease-in-out 2.4s infinite;
   filter: blur(3px);
 }
@@ -455,17 +455,17 @@
   left: 38px;
   width: 20px;
   height: 20px;
-  transform: rotate(95deg);
+  transform: rotate(203deg);
 }
 .sparkle-13:after {
   position: absolute;
   display: block;
   content: "";
-  width: 20px;
-  height: 20px;
-  background: #fff;
+  width: 18px;
+  height: 18px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 34px 34px;
+  transform-origin: 54px 54px;
   animation: rotate 6.1s ease-in-out 2.6s infinite;
   filter: blur(3px);
 }
@@ -476,17 +476,17 @@
   left: 38px;
   width: 21px;
   height: 21px;
-  transform: rotate(258deg);
+  transform: rotate(204deg);
 }
 .sparkle-14:after {
   position: absolute;
   display: block;
   content: "";
-  width: 21px;
-  height: 21px;
-  background: #fff;
+  width: 19px;
+  height: 19px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 32px 32px;
+  transform-origin: 52px 52px;
   animation: rotate 6.3s ease-in-out 2.8s infinite;
   filter: blur(3px);
 }
@@ -497,17 +497,17 @@
   left: 38px;
   width: 22px;
   height: 22px;
-  transform: rotate(179deg);
+  transform: rotate(127deg);
 }
 .sparkle-15:after {
   position: absolute;
   display: block;
   content: "";
-  width: 22px;
-  height: 22px;
-  background: #fff;
+  width: 20px;
+  height: 20px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 30px 30px;
+  transform-origin: 50px 50px;
   animation: rotate 6.5s ease-in-out 3s infinite;
   filter: blur(3px);
 }
@@ -518,17 +518,17 @@
   left: 38px;
   width: 23px;
   height: 23px;
-  transform: rotate(71deg);
+  transform: rotate(299deg);
 }
 .sparkle-16:after {
   position: absolute;
   display: block;
   content: "";
-  width: 23px;
-  height: 23px;
-  background: #fff;
+  width: 21px;
+  height: 21px;
+  background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   border-radius: 50%;
-  transform-origin: 28px 28px;
+  transform-origin: 48px 48px;
   animation: rotate 6.7s ease-in-out 3.2s infinite;
   filter: blur(3px);
 }
@@ -538,6 +538,6 @@
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
   to {
-    transform: rotate(360deg) translate3d(0, 0, 0);
+    transform: rotate(-360deg) translate3d(0, 0, 0);
   }
 }/*# sourceMappingURL=styles.css.map */
