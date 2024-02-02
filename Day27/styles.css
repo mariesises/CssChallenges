@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 30px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #e0e0e0;
+  color: #333;
+  font-size: 13px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  width: 240px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 25px 25px 25px #808080, -25px -25px 25px #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.head {
+  padding: 20px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid #262626;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+#checklist {
+  list-style: none;
+  padding: 4px 0;
+  margin: 0 30px;
+}
+
+#checklist input {
+  color: #262626;
+  position: relative;
+  display: block;
+  margin: 24px 0;
+  height: 14px;
+}
+
+#checklist label {
+  float: left;
+  font-size: 13px;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#checklist label::before,
+#checklist label::after {
+  content: "";
+  position: absolute;
+}/*# sourceMappingURL=styles.css.map */
