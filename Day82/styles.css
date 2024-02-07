@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 30px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #e0e0e0;
+  box-shadow: 32px 32px 47px #797979, -32px -32px 47px #ffffff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  perspective: 1000px;
+}
+
+.cb {
+  display: none;
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 50px;
+  top: 175px;
+  left: 150px;
+  text-align: center;
+  line-height: 46px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.front {
+  color: #262626;
+  background: #e0e0e0;
+  box-shadow: inset 7px 7px 14px #676767, inset -7px -7px 14px #ffffff;
+  transform: rotateY(0);
+}
+
+.back {
+  color: #e0e0e0;
+  border-radius: 50px;
+  background: #17c200;
+  box-shadow: inset 32px 32px 47px #0c6900, inset -32px -32px 47px #22ff00;
+  transform: rotateY(180deg);
+}
+
+.cb:checked ~ .button .front {
+  transform: rotateY(-180deg);
+}
+
+.cb:checked ~ .button .back {
+  transform: rotateY(0);
+}/*# sourceMappingURL=styles.css.map */
