@@ -33,8 +33,7 @@
     stroke-width: 0.2em;
     stroke-linecap: round;
     stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawLine 8s linear infinite alternate-reverse;
+    animation: drawHeart 6s linear infinite alternate;
 }
 
 .pulse {
@@ -55,7 +54,7 @@
     left: 172px;
 }
 
-@keyframes drawLine {
+@keyframes drawHeart {
     from {
         stroke-dashoffset: 1000;
     }
