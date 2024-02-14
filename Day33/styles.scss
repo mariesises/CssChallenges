@@ -24,23 +24,6 @@
     border-radius: 50%;
 }
 
-.clouds{
-    animation: moveCloud 20s infinite;
-}
-
-
-
-@keyframes moveCloud {
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 
 
