@@ -22,30 +22,4 @@
   background-color: #ebebeb;
   box-shadow: 0 0 13px rgba(235, 235, 235, 0.8);
   border-radius: 50%;
-}
-
-.cloud {
-  animation: moveCloud 20s infinite linear;
-}
-
-.shadow {
-  width: 310px;
-  position: absolute;
-  bottom: -10px;
-  background: #000;
-  z-index: -1;
-  box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-}
-
-@keyframes moveCloud {
-  0% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }/*# sourceMappingURL=styles.css.map */
