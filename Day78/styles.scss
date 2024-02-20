@@ -1,8 +1,5 @@
-// delete the following line if no text is used
-// edit the line if you wanna use other fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
-// use only the available space inside the 400x400 frame
 .frame {
     position: absolute;
     top: 50%;
@@ -26,4 +23,36 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    box-shadow:
+        inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:before {
+        height: 0%;
+        width: 2px;
+    }
+    &:hover {
+        box-shadow:
+            4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+            -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+            inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+    }
 }
