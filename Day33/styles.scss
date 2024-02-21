@@ -23,8 +23,43 @@
     box-shadow: 0 0 13px rgba(#ebebeb, 0.8);
     border-radius: 50%;
 }
+div svg {
+    position: absolute;
+    animation: 10s linear 4s infinite alternate moveClouds;
+    
+}
 
+.cloud-medium-1 {
+    top: 30%;
+    left: 20%;
+}
 
+.cloud-medium-2 {
+    top: 70%;
+    left: 5%;
+}
 
+.cloud-small-1 {
+    top: 10%;
+    left: 10%;
+}
 
+.cloud-small-2 {
+    top: 20%;
+    left: 60%;
+}
 
+.cloud-small-3 {
+    top: 55%;
+    left: 40%;
+}
+
+/*Animation for move the clouds */
+@keyframes moveClouds {
+    from {
+        transform: translateX(550%);
+    }
+    to {
+        transform: translateX(-500%);
+    }
+}
