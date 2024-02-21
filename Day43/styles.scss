@@ -26,13 +26,8 @@
 }
 
 .base {
-    fill: #fff35c;
+    fill: #8c8f99;
     transition: all 0.5s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        fill: #8c8f99;
-    }
 }
 
 .base:hover ~ .l {
@@ -40,12 +35,12 @@
 }
 
 .light {
-    fill: #fff35c;
-    box-shadow: 0 0 50px 10px #fff35c;
+    fill: #8c8f99;
+    box-shadow: 0 0 50px 10px #8c8f99;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        fill: #8c8f99;
+        fill: #fff35c;
     }
 }
