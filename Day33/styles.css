@@ -26,7 +26,7 @@
 
 div svg {
   position: absolute;
-  animation: 10s linear 4s infinite alternate moveClouds;
+  animation: moveClouds 40s linear infinite alternate both;
 }
 
 .cloud-medium-1 {
@@ -57,9 +57,9 @@ div svg {
 /*Animation for move the clouds */
 @keyframes moveClouds {
   from {
-    transform: translateX(550%);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(-500%);
+    transform: translateX(-200%);
   }
 }/*# sourceMappingURL=styles.css.map */
