@@ -6,41 +6,44 @@
     height: 400px;
     margin-top: -200px;
     margin-left: -200px;
-    border-radius: 2px;
+    border-radius: 30px;
     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background: #262626;
-    color: #333;
-    font-family: "Open Sans", Helvetica, sans-serif;
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 #lamp {
-    width: 400px;
+    width: 200px;
     position: absolute;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     fill: #8c8f99;
-}
-
-.base {
-    fill: #8c8f99;
-    transition: all 0.5s ease-in-out;
-}
-
-.base:hover ~ .l {
-    opacity: 0;
-}
-
-.light {
-    fill: #8c8f99;
-    box-shadow: 0 0 50px 10px #8c8f99;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        fill: #fff35c;
+        fill: #FAFA33;
     }
+}
+
+#glow {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 80px;
+    height: 80px;
+    background-color: #08aeea;
+    background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+    border-radius: 50px;
+    box-shadow: 0 0 70px 30px #FAFA33;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#lamp:hover ~ #glow {
+    opacity: 1;
 }
