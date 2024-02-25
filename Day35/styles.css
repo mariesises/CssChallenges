@@ -6,10 +6,10 @@
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  border-radius: 2px;
+  border-radius: 30px;
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  background: #fff;
+  background: rgb(36, 36, 36);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,4 +19,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.load {
+  background: #fc354c;
+  background: linear-gradient(to right, rgb(11, 236, 192), rgb(236, 38, 11));
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 0.5px groove rgb(36, 36, 36);
+  border-top-color: transparent;
+  filter: blur(1px);
+  animation: load 1.2s linear infinite;
+  box-shadow: 0px -5px 21px 0px rgb(236, 38, 11), 0px 5px 21px 0px rgb(11, 236, 192);
+}
+
+.loading {
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
