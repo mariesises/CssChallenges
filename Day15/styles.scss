@@ -11,36 +11,69 @@
     border-radius: 30px;
     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background: #fff;
+    background: #ff0099;
+    background: -webkit-linear-gradient(to right, #493240, #ff0099);
+    background: linear-gradient(to right, #493240, #ff0099);
+    color: white;
+    font-family: "Open Sans", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .center {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 260px;
+    top: 70px;
+    left: 50px;
+    background: #fff;
+    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.title {
+    font-size: 16px;
+    color: #262626;
+    line-height: 50px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.dropzone {
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    width: 100px;
+    height: 80px;
+    top: 70px;
+    left: 100px;
+
+    &.is-dragover{
+        border-color: #493240;
+        background: #eee;
+    }
 }
 
 .input-div {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid rgb(11, 236, 130);
+    border: 2px solid rgb(213, 29, 126);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     box-shadow:
-        0px 0px 100px rgb(11, 236, 130),
-        inset 0px 0px 10px rgb(11, 236, 130),
+        0px 0px 100px rgb(213, 29, 126),
+        inset 0px 0px 10px rgb(213, 29, 126),
         0px 0px 5px rgb(255, 255, 255);
     animation: flicker 2s linear infinite;
 }
 
 .icon {
-    color: rgb(11, 236, 130);
+    color: rgb(213, 29, 126);
     font-size: 2rem;
     cursor: pointer;
     animation: iconshadow 2s linear infinite;
@@ -52,4 +85,26 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+
+.btn {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    left: 80px;
+    bottom: 24px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 5px 12px -1px rgba(0,0,0,0.72);
+    background: #ff0099;
+    background: -webkit-linear-gradient(to right, #493240, #ff0099);
+    background: linear-gradient(to right, #493240, #ff0099);
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        box-shadow: 0 5px 0 0 #493240, 0 2px 10px 0 #ff0099;
+    }
 }
