@@ -99,4 +99,25 @@
 }
 .btn:hover {
   box-shadow: 0 5px 0 0 #493240, 0 2px 10px 0 #ff0099;
+}
+
+@keyframes iconshadow {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

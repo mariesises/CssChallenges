@@ -50,7 +50,7 @@
     top: 70px;
     left: 100px;
 
-    &.is-dragover{
+    &.is-dragover {
         border-color: #493240;
         background: #eee;
     }
@@ -98,13 +98,41 @@
     font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 3px 5px 12px -1px rgba(0,0,0,0.72);
+    box-shadow: 3px 5px 12px -1px rgba(0, 0, 0, 0.72);
     background: #ff0099;
     background: -webkit-linear-gradient(to right, #493240, #ff0099);
     background: linear-gradient(to right, #493240, #ff0099);
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
-    &:hover{
-        box-shadow: 0 5px 0 0 #493240, 0 2px 10px 0 #ff0099;
+    &:hover {
+        box-shadow:
+            0 5px 0 0 #493240,
+            0 2px 10px 0 #ff0099;
+    }
+}
+
+@keyframes iconshadow {
+    0% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 0.2;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
