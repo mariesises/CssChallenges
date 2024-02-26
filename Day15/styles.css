@@ -48,10 +48,6 @@
   top: 70px;
   left: 100px;
 }
-.dropzone.is-dragover {
-  border-color: #493240;
-  background: #eee;
-}
 
 .input-div {
   width: 100px;
