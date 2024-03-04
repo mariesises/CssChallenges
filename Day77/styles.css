@@ -6,12 +6,12 @@
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  border-radius: 2px;
+  border-radius: 30px;
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  background: #fff;
-  color: #333;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  background: hsl(339, 100%, 55%);
+  background: linear-gradient(90deg, hsl(339, 100%, 55%) 0%, hsl(197, 100%, 64%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(339, 100%, 55%) 0%, hsl(197, 100%, 64%) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,4 +21,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  animation: move 2s infinite alternate;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  border: 2px solid white;
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translateY(-150px);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  25% {
+    box-shadow: 0px -5px 0px rgba(255, 255, 255, 0.2), 0px -10px 0px rgba(255, 255, 255, 0.2), 0px -15px 0px rgba(255, 255, 255, 0.2), 0px -20px 0px rgba(255, 255, 255, 0.2), 0px -25px 0px rgba(255, 255, 255, 0.2), 0px -30px 0px rgba(255, 255, 255, 0.2), 0px -35px 0px rgba(255, 255, 255, 0.1), 0px -40px 0px rgba(255, 255, 255, 0.1), 0px -45px 1px rgba(255, 255, 255, 0.05), 0px -50px 2px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    transform: translateY(150px);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  75% {
+    box-shadow: 0px 5px 0px rgba(255, 255, 255, 0.2), 0px 10px 0px rgba(255, 255, 255, 0.2), 0px 15px 0px rgba(255, 255, 255, 0.2), 0px 20px 0px rgba(255, 255, 255, 0.2), 0px 25px 0px rgba(255, 255, 255, 0.2), 0px 30px 0px rgba(255, 255, 255, 0.2), 0px 35px 0px rgba(255, 255, 255, 0.1), 0px 40px 0px rgba(255, 255, 255, 0.1), 0px 45px 1px rgba(255, 255, 255, 0.05), 0px 50px 2px rgba(255, 255, 255, 0.05);
+  }
 }/*# sourceMappingURL=styles.css.map */
