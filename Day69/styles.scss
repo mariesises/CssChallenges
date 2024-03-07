@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-
 .frame {
     position: absolute;
     top: 50%;
@@ -8,19 +6,122 @@
     height: 400px;
     margin-top: -200px;
     margin-left: -200px;
-    border-radius: 2px;
+    border-radius: 30px;
     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background: #fff;
-    color: #333;
-    font-family: "Open Sans", Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background: #1e1f1e;
 }
 
-.center {
+.eye {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    background: repeating-radial-gradient(
+    circle,
+    #000,
+    #000 5px,
+    transparent 6px
+  );
+  background-size: 20px 20px;
+    border-radius: 160px 0;
+    transition: all 0.5s ease-in-out;
+
+    .ball {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        top: 25px;
+        left: 25px;
+        background: url("https://i.pinimg.com/564x/6a/d0/4f/6ad04f5c03c1d1bdf06f67c64f4f4b79.jpg");
+        background-size: 200px;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        animation: ball 5s ease-in-out infinite;
+    }
+}
+
+.lid {
+    fill: #1e1f1e;
+}
+
+.lid-top {
+    position: absolute;
+    z-index: 2;
+    width: 240px;
+    height: 106px;
+    top: 125px;
+    left: 80px;
+    transform: translateY(-60px);
+    animation: lid-top 5s ease-in-out infinite;
+}
+
+.lid-bottom {
+    position: absolute;
+    z-index: 2;
+    width: 240px;
+    height: 106px;
+    bottom: 125px;
+    left: 80px;
+    transform: rotate(180deg) translateY(-60px);
+    animation: lid-bottom 5s ease-in-out infinite;
+}
+
+@keyframes lid-top {
+    0%,
+    10%,
+    18%,
+    26%,
+    34%,
+    48%,
+    56%,
+    76%,
+    84% {
+        transform: translateY(-60px);
+    }
+    14%,
+    30%,
+    52%,
+    80% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes lid-bottom {
+    0%,
+    10%,
+    18%,
+    26%,
+    34%,
+    48%,
+    56%,
+    76%,
+    84% {
+        transform: rotate(180deg) translateY(-60px);
+    }
+    14%,
+    30%,
+    52%,
+    80% {
+        transform: rotate(180deg) translateY(0);
+    }
+}
+
+@keyframes ball {
+    0%,
+    15%,
+    55% {
+        transform: rotate(-45deg) translateX(0);
+    }
+    18%,
+    30% {
+        transform: rotate(-45deg) translate(-25px, 5px) scale(0.8);
+    }
+    35%,
+    51% {
+        transform: rotate(-45deg) translate(25px, 10px);
+    }
 }
