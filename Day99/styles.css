@@ -17,13 +17,34 @@
   display: none;
 }
 
-label {
+.checked .bg {
+  transform: scale(1);
+}
+
+.checked .ring,
+.checked .stripes {
+  opacity: 0;
+  transform: scale(1);
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out 0.3s;
+}
+
+.checked .icon {
+  border-radius: 0;
+  transform: rotate(180deg) scale(1.1);
+  box-shadow: -4px -8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.label {
   position: absolute;
   z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   cursor: pointer;
 }
 
-.background {
+.bg {
   position: absolute;
   top: -100px;
   left: -100px;
@@ -56,4 +77,34 @@ label {
   left: 125px;
   border: 3px solid #fff;
   border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.6s ease-in, opacity 0.3s ease-in;
+}
+
+.stripes {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 300px;
+  height: 300px;
+  transform: scale(0);
+  transition: transform 0.6s ease-in, opacity 0.3s ease-in;
+}
+
+.stripes .stripe {
+  position: absolute;
+  top: 137px;
+  left: 148px;
+  height: 26px;
+  width: 4px;
+  background: #fff;
+}
+
+@keyframes background {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=styles.css.map */
