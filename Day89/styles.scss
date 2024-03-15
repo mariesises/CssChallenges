@@ -54,7 +54,7 @@
         height: 10px;
     }
     40% {
-        transform: translate(-50%, -50%) rotate(-45deg) translate(-50%, 0);
+        transform: translate(-50%, -50%) rotate(-90deg) translate(-50%, 0);
         width: 40px;
         height: 10px;
     }
@@ -64,7 +64,7 @@
         height: 20px;
     }
     80% {
-        transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(-135deg);
         width: 20px;
         height: 20px;
     }
@@ -82,17 +82,17 @@
         height: 40px;
     }
     20% {
-        transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
         width: 10px;
         height: 40px;
     }
     40% {
-        transform: translate(-50%, -50%) rotate(-45deg) translate(100%, 0);
+        transform: translate(-50%, -50%) rotate(90deg) translate(100%, 0);
         width: 10px;
         height: 40px;
     }
     60% {
-        transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(135deg);
         width: 20px;
         height: 20px;
     }
