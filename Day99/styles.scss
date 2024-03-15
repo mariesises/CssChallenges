@@ -9,8 +9,7 @@
     border-radius: 30px;
     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background: #333;
-    color: #333;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 
 #check {
@@ -29,7 +28,6 @@
         transform 0.6s ease-out,
         opacity 0.3s ease-out 0.3s;
 }
-
 .checked .icon {
     border-radius: 0;
     transform: rotate(180deg) scale(1.1);
@@ -48,11 +46,11 @@
 
 .bg {
     position: absolute;
-    top: -100px;
-    left: -100px;
     width: 600px;
     height: 600px;
-    background: #2d2d2a;
+    top: -100px;
+    left: -100px;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
     border-radius: 50%;
     transform: scale(0);
     transition: all 0.6s ease-in-out;
@@ -60,23 +58,23 @@
 
 .icon {
     position: absolute;
-    width: 40px;
-    height: 40px;
     top: 180px;
     left: 180px;
+    width: 40px;
+    height: 40px;
     background: #fff;
     border-radius: 50%;
-    transition: all 0.6 ease-in-out;
+    transition: all 0.6s ease-in-out;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ring {
-    position: absolute;
     box-sizing: border-box;
-    width: 150px;
-    height: 150px;
+    position: absolute;
     top: 125px;
     left: 125px;
+    width: 150px;
+    height: 150px;
     border: 3px solid #fff;
     border-radius: 50%;
     transform: scale(0);
@@ -89,10 +87,8 @@
     position: absolute;
     top: 50px;
     left: 50px;
-
     width: 300px;
     height: 300px;
-
     transform: scale(0);
     transition:
         transform 0.6s ease-in,
@@ -102,7 +98,6 @@
     position: absolute;
     top: 137px;
     left: 148px;
-
     height: 26px;
     width: 4px;
     background: #fff;
