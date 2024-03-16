@@ -54,7 +54,7 @@
 
 #checklist {
     position: relative;
-    padding: 30px;
+    padding: 22px;
     display: grid;
     grid-template-columns: 30px auto;
     align-items: center;
@@ -63,11 +63,12 @@
 
 #checklist label {
     position: relative;
+    float: left;
+    margin-right: 60px;
     line-height: 20px;
     margin-bottom: 10px;
     cursor: pointer;
     white-space: nowrap;
-    transition: all 0.3s ease-in-out;
     transition: color 0.3s ease;
 }
 
@@ -80,17 +81,19 @@
 }
 
 #checklist label::before {
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: #2c1886;
+    left: 150px;
+    width: 8px;
+    height: 2px;
     border-radius: 2px;
+    background: #2c1886;
     transition: background 0.3s ease;
 }
 
 #checklist label:after {
-    height: 4px;
-    width: 4px;
+    height: 8px;
+    width: 10px;
+    top: 8px;
+    left: 140px;
     border-radius: 50%;
 }
 
@@ -100,10 +103,10 @@
     width: 10px;
     height: 10px;
     border: 0;
-    margin: 0 15px 0 0;
     cursor: pointer;
-    margin-left: 100px;
-    background: #e0e0e0;
+    margin-left: 180px;
+    margin-bottom: 13px; //#e0e0e0
+    align-items: center;
 }
 
 #checklist input[type="checkbox"]::before,
@@ -146,10 +149,6 @@
     animation: slice 0.4s ease forwards;
 }
 
-#checklist input[type="checkbox"]:checked + label::after {
-    animation: firework 0.5s ease forwards 0.1s;
-}
-
 @keyframes move {
     50% {
         padding-left: 8px;
@@ -164,7 +163,7 @@
 @keyframes slice {
     60% {
         width: 100%;
-        left: 4px;
+        left: 10px;
     }
 
     100% {
@@ -177,13 +176,13 @@
 @keyframes check-01 {
     0% {
         width: 4px;
-        top: auto;
+        top: 4px;
         transform: rotate(0);
     }
 
     50% {
         width: 0px;
-        top: auto;
+        top: 4px;
         transform: rotate(0);
     }
 
@@ -223,33 +222,5 @@
         width: 10px;
         top: 8px;
         transform: rotate(-45deg);
-    }
-}
-
-@keyframes firework {
-    0% {
-        opacity: 1;
-        box-shadow:
-            0 0 0 -2px #4f29f0,
-            0 0 0 -2px #4f29f0,
-            0 0 0 -2px #4f29f0,
-            0 0 0 -2px #4f29f0,
-            0 0 0 -2px #4f29f0,
-            0 0 0 -2px #4f29f0;
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        box-shadow:
-            0 -15px 0 0px #4f29f0,
-            14px -8px 0 0px #4f29f0,
-            14px 8px 0 0px #4f29f0,
-            0 15px 0 0px #4f29f0,
-            -14px 8px 0 0px #4f29f0,
-            -14px -8px 0 0px #4f29f0;
     }
 }
