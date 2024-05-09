@@ -1,0 +1,145 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$body: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+
+.stickman {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .head {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: $body;
+        border-radius: 50%;
+        margin: 0 auto 10px auto;
+    }
+
+    .body {
+        position: relative;
+        height: 100px;
+        width: 60px;
+        background: $body;
+
+        .arm {
+            position: absolute;
+            top: 0;
+
+            &-left {
+                left: -10px;
+
+                .upper {
+                    transform: rotate(12deg);
+                    animation: upper2 1s ease-in-out infinite alternate;
+
+                    .lower {
+                        transform: rotate(-5deg);
+                        animation: lower 3s ease-in-out infinite alternate;
+                    }
+                }
+            }
+            &-right{
+                right: -10px;
+
+                .upper{
+                    transform: rotate(-75deg);
+                    animation: upper 1s ease-in-out infinite alternate;
+                }
+
+                .lower{
+                    transform: rotate(-75deg);
+                    animation: lower 1s ease-in-out infinite alternate;
+                }
+            }
+
+            .upper{
+                position: relative;
+                background: $body;
+                height: 50px;
+                width: 16px;
+                border-radius: 8px;
+                transform-origin: 8px 8px;
+            }
+
+            .lower{
+                position: absolute;
+                height: 50px;
+                width: 15px;
+                background: $body;
+                bottom: -36px;
+                border-radius: 8px;
+                transform-origin: 8px 8px;
+
+            }
+        }
+        .leg{
+            position: absolute;
+            
+            top: 80px;
+
+            &-left{
+                left: 0px;
+            }
+
+            &-right{
+                right: 0px;
+            }
+
+            .upper{
+                position: relative;
+                background: $body;
+                width: 24px;
+                height: 100px;
+                border-radius: 12px;
+                transform-origin: 12px 12px;
+                z-index: -1;
+            }
+
+        }
+    }
+}
+
+@keyframes upper {
+    0%{
+        transform: rotate(-75deg);
+    }
+    100%{
+        transform: rotate(-85deg);
+    } 
+}
+
+@keyframes lower {
+    0%{
+        transform: rotate(-75deg);
+    }
+    100%{
+        transform: rotate(-105deg);
+    } 
+}
+
+@keyframes upper2 {
+    0%{
+        transform: rotate(75deg);
+    }
+    100%{
+        transform: rotate(35deg);
+    } 
+}
+
