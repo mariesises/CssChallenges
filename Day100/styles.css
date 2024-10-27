@@ -40,28 +40,28 @@
   left: 0;
   height: 120px;
   width: 6px;
-  animation: flick 5s ease-in-out 0.83s infinite alternate both;
+  animation: flick 5s ease-in-out 2.66s infinite alternate both;
 }
 .word .e .top {
   top: 0;
   right: 0;
   height: 6px;
   width: 60px;
-  animation: flick 5s ease-in-out 1.1s infinite alternate both;
+  animation: flick 5s ease-in-out 3.29s infinite alternate both;
 }
 .word .e .middle {
   top: 56px;
   height: 6px;
   width: 60px;
   right: 0;
-  animation: flick 5s ease-in-out 2.8s infinite alternate both;
+  animation: flick 5s ease-in-out 0.04s infinite alternate both;
 }
 .word .e .bottom {
   bottom: 0;
   height: 6px;
   width: 60px;
   right: 0;
-  animation: flick 5s ease-in-out 1.39s infinite alternate both;
+  animation: flick 5s ease-in-out 1.75s infinite alternate both;
 }
 .word .n {
   position: absolute;
@@ -75,7 +75,7 @@
   left: 0;
   height: 120px;
   width: 6px;
-  animation: flick 5s ease-in-out 0.41s infinite alternate both;
+  animation: flick 5s ease-in-out 1.65s infinite alternate both;
 }
 .word .n .middle {
   top: 0;
@@ -84,14 +84,14 @@
   left: 9px;
   transform-origin: 3px 3px;
   transform: rotate(62deg);
-  animation: flick 5s ease-in-out 2.09s infinite alternate both;
+  animation: flick 5s ease-in-out 2.57s infinite alternate both;
 }
 .word .n .right {
   right: 0;
   height: 120px;
   width: 6px;
   top: 0;
-  animation: flick 5s ease-in-out 1.5s infinite alternate both;
+  animation: flick 5s ease-in-out 1.08s infinite alternate both;
 }
 .word .d {
   position: absolute;
@@ -100,14 +100,14 @@
   top: 0;
   left: 283px;
   border-radius: 0px 150px 150px 0px;
-  animation: flick 5s ease-in-out 1.61s infinite alternate both;
+  animation: flick 5s ease-in-out 3.04s infinite alternate both;
 }
 .word .d .left {
   top: 0;
   left: -5px;
   height: 120px;
   width: 6px;
-  animation: flick 5s ease-in-out 3.45s infinite alternate both;
+  animation: flick 5s ease-in-out 0.68s infinite alternate both;
 }
 
 @keyframes flick {

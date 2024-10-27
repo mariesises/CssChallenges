@@ -18,39 +18,51 @@
 }
 
 .center {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.wave {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: rotate 20s linear infinite;
 }
 
-.wave {
-    width: 10px;
-    height: 10px;
-    position: relative;
-    animation: rotate 10s linear infinite;
-}
+.wave1 .dot {
+    background-color: #ff5733;
+} 
+.wave2 .dot {
+    background-color: #ffc300;
+} 
+.wave3 .dot {
+    background-color: #daf7a6;
+} 
+.wave4 .dot {
+    background-color: #33ffbd;
+} 
+
+/* Cada punto */
 .dot {
     position: absolute;
-    width: 6px;
-    height: 6px;
-    background-color: white;
     border-radius: 50%;
     opacity: 0;
     animation: dot-wave 2s linear infinite;
+    transform-origin: center;
 }
 
-/* Keyframes for rotation */
+/* Animación de rotación para la onda */
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
     }
     100% {
-        transform: rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
     }
 }
 
-/* Keyframes for dot opacity animation */
+/* Animación de cada punto para que aparezca y desaparezca */
 @keyframes dot-wave {
     0%,
     100% {
