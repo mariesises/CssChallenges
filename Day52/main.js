@@ -1,4 +1,4 @@
-function generateDots(numDots, radius, waveClass, delayIncrement) {
+function generateDots(numDots, radius, waveClass) {
     const waveContainer = document.querySelector(`.${waveClass}`);
 
     for (let i = 0; i < numDots; i++) {
@@ -6,29 +6,36 @@ function generateDots(numDots, radius, waveClass, delayIncrement) {
         const depth = i / numDots; 
 
         // Posición ajustada de los puntos más cerca del centro
-        const x = (radius * depth * Math.cos(angle));  
-        const y = (radius * depth * Math.sin(angle));  
+        const x = (radius * Math.cos(angle)); // Cambiado para usar un radio fijo
+        const y = (radius * Math.sin(angle)); // Cambiado para usar un radio fijo
 
         // Creamos el punto
         const dot = document.createElement('div');
         dot.className = 'dot';
-        dot.style.left = `${x}px`;
-        dot.style.top = `${y}px`;
-        dot.style.width = `${10 * (1 - depth)}px`;  
-        dot.style.height = `${10 * (1 - depth)}px`;  
-        dot.style.opacity = `${1 - depth}`; 
-        dot.style.animationDelay = `${i * delayIncrement}s`;
+        dot.style.left = `${x}px`; 
+        dot.style.top = `${y}px`; 
+        dot.style.width = `${2 * (5 - depth)}px`;  
+        dot.style.height = `${2 * (5 - depth)}px`;  
+        dot.style.opacity = `0`; 
+        dot.style.animationDelay = `${i * 0.03}s`; 
 
         waveContainer.appendChild(dot);
     }
 }
 
-
-generateDots(60, 70, 'wave1', 0.1); 
-generateDots(60, 85, 'wave2', 0.3); 
-generateDots(60, 90, 'wave3', 0.4); 
-generateDots(60, 105, 'wave4', 0.5);
-generateDots(60, 125, 'wave5', 0.6);
-generateDots(60, 145, 'wave6', 0.7);
-generateDots(60, 165, 'wave7', 0.8);
-generateDots(60, 185, 'wave8', 0.9);
+// Aumentar el número de olas y puntos
+generateDots(10, 30, 'wave1'); 
+generateDots(140, 50, 'wave2'); 
+generateDots(160, 90, 'wave3'); 
+generateDots(180, 120, 'wave4');
+generateDots(200, 150, 'wave5');
+generateDots(220, 180, 'wave6');
+generateDots(240, 200, 'wave7');
+generateDots(260, 230, 'wave8');
+generateDots(280, 280, 'wave9');
+generateDots(300, 300, 'wave10');
+generateDots(320, 320, 'wave11');
+generateDots(340, 340, 'wave12');
+generateDots(360, 360, 'wave13');
+generateDots(380, 380, 'wave14');
+generateDots(400, 400, 'wave15');
