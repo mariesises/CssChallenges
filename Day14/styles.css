@@ -22,6 +22,7 @@
 .card {
   height: 150px;
   width: 250px;
+  perspective: 1000px;
 }
 
 .card-general {
@@ -31,11 +32,61 @@
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 10px #9d9d9d;
+  background-color: white;
   border-radius: 30px;
+  backface-visibility: hidden;
+  transition: transform 1s;
+  align-items: center;
 }
 
 .img1 {
   height: 150px;
   width: auto;
   border-radius: 30px;
+}
+
+.img2 {
+  height: 130px;
+  width: 130px;
+  animation: flying 2.5s linear infinite;
+}
+
+.front {
+  transform: rotateX(0deg);
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+.back {
+  transform: rotatex(180deg);
+  backface-visibility: hidden;
+  z-index: 1;
+  background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWNwbThuNXd2OXgydWxsaTY0ZGExemljb2pzMnVjOWp3YnVhNHRwZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/229ZAKD0M1Uc9UwjGE/giphy.webp");
+  background-position: center;
+}
+
+.card:hover .front {
+  transform: rotateX(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateX(0deg);
+}
+
+@keyframes flying {
+  0% {
+    transform: translate3d(0, -5px, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+  75% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(-450%);
+    opacity: 1;
+    z-index: -2;
+  }
 }/*# sourceMappingURL=styles.css.map */
